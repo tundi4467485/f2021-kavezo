@@ -1,0 +1,16 @@
+$TTL 86400
+@   IN  SOA linux-vr9.blackcafe.lan. blackcafe.lan (
+    2025120201  ; Serial
+    3600        ; Refresh
+    1800        ; Retry
+    604800      ; Expire
+    86400       ; Minimum TTL
+)
+
+            IN  NS      linux-vr9.blackcafe.lan.
+            IN  A       192.168.0.29
+            IN  AAAA    fdd2:093f:f15e::2
+
+win-vr9     IN  A       192.168.0.19
+linux-vr9   IN  A       192.168.0.29
+linux-vr9   IN  AAAA    fdd2:093f:f15e::2

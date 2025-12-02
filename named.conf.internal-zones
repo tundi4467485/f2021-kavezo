@@ -1,0 +1,21 @@
+zone "blackcafe.lan" IN {
+    type master;
+    file "/etc/bind/blackcafe.lan";
+    allow-update {
+        none;
+    };
+};
+zone "0.168.192.in-addr.arpa" IN {
+    type master;
+    file "/etc/bind/0.168.192.in-addr.arpa";
+    allow-update {
+        none;
+    };
+};
+zone "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.e.5.1.f.f.3.9.0.2.d.d.f.ip6.arpa" IN {
+    type master;
+    file "/etc/bind/0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.e.5.1.f.f.3.9.0.2.d.d.f.ip6.arpa";
+    allow-update {
+        none;
+    };
+}
